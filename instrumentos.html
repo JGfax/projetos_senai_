@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertanejo</title>
+    <link rel="stylesheet" href="instrumentos.css">
+</head>
+
+<style>
+
+    @font-face {
+            font-family: minhafonte;
+            src: url(font/fontT.ttf);
+        }
+
+        pre{
+            font-family: "minhafonte";
+            color: #553324;
+        }
+
+        p{
+            color: #5b3727
+        }
+</style>
+
+
+<body>
+
+    <!-- ================== BOTÃO DE RETORNO ================== -->
+    <div id="topo"></div>
+    
+    <!-- ================== NAVBAR ================== -->
+    <section id="menu">
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html" target="_top">
+                    <img src="image/logo.webp" alt="logo" width="50px">
+                </a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="instrumentos.html" target="_top">Instrumentos</a></li>
+                <li><a href="albuns.html">Álbuns e Músicas</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="marcos.html">Marcos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Saiba Mais</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Vídeo</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("mobileMenu");
+                menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+            }
+        </script>
+    </section>
+
+    <!-- ================== INSTRUMENTOS (RAIZ) ================== -->
+
+    <section id="instrumentos">
+    <div class="titulo">
+        <h1><pre>INSTRUMENTOS (SERTANEJO RAIZ):</pre></h1>
+    </div>
+
+    <div class="container-instrumentos">
+        <div class="instrumentos">
+            <img src="image_instrumentos/vcaipira.webp" alt="violacaipira" onclick="document.getElementById('audio').play()">
+            <audio id="audio" src="audio/violacaipira.mp3"></audio>
+            <h3>Viola Caipira</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/violao.webp" alt="violao" onclick="document.getElementById('audio1').play()">
+            <audio id="audio1" src="audio/violao.mp3"></audio>
+            <h3>Violão</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/sanfona.webp" alt="sanfona" onclick="document.getElementById('audio2').play()">
+            <audio id="audio2" src="audio/sanfona.mp3"></audio>
+            <h3>Sanfona</h3>
+        </div>
+
+        <div class="instrumentos">
+             <img src="image_instrumentos/triangulo.webp" alt="triangulo" onclick="document.getElementById('audio3').play()">
+            <audio id="audio3" src="audio/triangulo.mp3"></audio>
+            <h3>Triângulo</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/pandeiro.webp" alt="pandeiro" onclick="document.getElementById('audio4').play()">
+            <audio id="audio4" src="audio/pandeiro.mp3"></audio>
+            <h3>Pandeiro</h3>
+        </div>
+    </div>
+</section>
+
+<br><br>
+
+ <hr style="border: 1px solid #553324; width: 80%; padding-bottom: auto;"><br><br>
+
+<!-- ================== INSTRUMENTOS (UNIVERSITÁRIO) ================== -->
+<section id="fundo">
+    <section id="instrumentos">
+    <div class="titulo2">
+        <h1><pre>INSTRUMENTOS (SERTANEJO UNIVERSITÁRIO):</pre></h1>
+    </div>
+
+    <div class="container-instrumentos">
+        <div class="instrumentos">
+            <img src="image_instrumentos/guitarra.webp" alt="guitarra" onclick="document.getElementById('audio5').play()">
+            <audio id="audio5" src="audio/guitarra.mp3"></audio>
+            <h3>Guitarra</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/bateria.webp" alt="bateria" onclick="document.getElementById('audio6').play()">
+            <audio id="audio6" src="audio/bateria.mp3"></audio>
+            <h3>Bateria</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/baixo.webp" alt="baixo" onclick="document.getElementById('audio7').play()">
+            <audio id="audio7" src="audio/baixo.mp3"></audio>
+            <h3>Contrabaixo</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/saxofone.webp" alt="saxofone" onclick="document.getElementById('audio8').play()">
+            <audio id="audio8" src="audio/saxofone.mp3"></audio>
+            <h3>Saxofone</h3>
+        </div>
+
+        <div class="instrumentos">
+            <img src="image_instrumentos/teclado.webp" alt="teclado" onclick="document.getElementById('audio9').play()">
+            <audio id="audio9" src="audio/teclado.mp3"></audio>
+            <h3>Teclado</h3>
+        </div>
+    </div>
+
+    </section>
+</section>
+
+<br><br>
+
+
+ <hr style="border: 1px solid #553324; width: 80%; margin: auto;">
+
+
+<!-- ================== PASSADOR DE CARDS (INSTRUMENTOS) ================== -->
+
+<section id="carrossel-cards">
+  <h1 class="titulo"><pre>DESCRIÇÃO DOS INSTRUMENTOS:</pre></h1>
+
+  <div class="carrossel-container">
+    <button class="seta esquerda">&#10094;</button>
+
+    <div class="carrossel-cards">
+      <div class="card">
+        <img src="image_instrumentos/vcaipira.webp" alt="Viola Caipira">
+        <h2>Viola Caipira</h2>
+        <p>O violão caipira, também conhecido como viola caipira, é um instrumento tradicional da música brasileira, especialmente do interior. Possui dez cordas e produz um som característico e nostálgico.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/teclado.webp" alt="Teclado">
+        <h2>Teclado</h2>
+        <p>Instrumento eletrônico versátil capaz de reproduzir diversos timbres. Presente em muitos estilos musicais, do pop ao sertanejo.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/violao.webp" alt="Violão">
+        <h2>Violão</h2>
+        <p>Um dos instrumentos mais populares do mundo. Possui seis cordas e está presente em praticamente todos os estilos musicais brasileiros.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/pandeiro.webp" alt="Pandeiro">
+        <h2>Pandeiro</h2>
+        <p>Instrumento de percussão muito usado em estilos como samba, choro e forró. É tocado com as mãos e marca o ritmo com sons variados.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/saxofone.webp" alt="Saxofone">
+        <h2>Saxofone</h2>
+        <p>Instrumento de sopro metálico com som quente e expressivo, destaque no jazz e na música popular.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/baixo.webp" alt="Contrabaixo">
+        <h2>Contrabaixo</h2>
+        <p>Instrumento de cordas que sustenta a harmonia e dá profundidade ao ritmo.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/bateria.webp" alt="Bateria">
+        <h2>Bateria</h2>
+        <p>Conjunto de tambores e pratos que define o tempo e impulsiona a energia da música.</p>
+      </div>
+
+       <div class="card">
+        <img src="image_instrumentos/triangulo.webp" alt="Triangulo">
+        <h2>Triângulo</h2>
+        <p>Instrumento de percussão metálico que produz um som agudo e cintilante ao ser percutido.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/sanfona.webp" alt="Sanfona">
+        <h2>Sanfona</h2>
+        <p>Instrumento de fole que combina teclas e botões, produzindo sons ricos e melodiosos típicos da música popular.</p>
+      </div>
+
+      <div class="card">
+        <img src="image_instrumentos/guitarra.webp" alt="Guitarra">
+        <h2>Guitarra</h2>
+        <p>Instrumento de cordas amplificado, com timbre versátil que vai do suave ao distorcido, marcando presença em diversos estilos musicais.</p>
+      </div>
+
+    </div>
+
+    <button class="seta direita">&#10095;</button>
+  </div>
+</section>
+
+<script>
+  const carrossel = document.querySelector('.carrossel-cards');
+  const btnEsq = document.querySelector('.esquerda');
+  const btnDir = document.querySelector('.direita');
+
+  btnDir.addEventListener('click', () => {
+    carrossel.scrollBy({ left: 320, behavior: 'smooth' });
+  });
+
+  btnEsq.addEventListener('click', () => {
+    carrossel.scrollBy({ left: -320, behavior: 'smooth' });
+  });
+</script>
+
+
+      
+
+
+    <!-- ================== RODAPÉ ================== -->
+    <section>
+        <footer>
+            <div class="footer-section">
+                <h3>Desenvolvido por:</h3>
+                <p style="color: white;">João Gustavo & Manuella Vitória</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Turma:</h3>
+                <p style="color: white;">1-A-SESI-TI - Desenvolvimento de Sistemas</p>
+            </div>
+        </footer>
+    </section>
+
+
+   <!-- ============= BOTÃO DE RETORNO ===================-->
+
+    <!-- Âncora no topo -->
+<a id="topo"></a>
+
+<!-- Botão flutuante -->
+<a href="#topo" class="btn-topo"> ⬆ </a>
+
+
+</body>
+</html>

@@ -1,0 +1,540 @@
+/* ===================== ESTILOS GERAIS ===================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffbe7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===================== CABEÇALHO / MENU ===================== */
+
+.menu {
+    background-image: linear-gradient(to right, #553324, #a67b5b);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1);
+    height: 78px; /* fixa a altura da barra */
+    overflow: visible; /* permite que a logo ultrapasse um pouco */
+}
+
+.logo img {
+    width: 120px; /* aumenta o tamanho da logo */
+    height: auto;
+    position: relative;
+    top: 5px; /* ajusta verticalmente sem alterar a barra */
+    margin-top: 60px;
+    margin-left: 15px;
+    border-radius: 160px;
+    border: 2px solid  #553324;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu li a {
+    color: white;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    padding: 5px 25px;
+    margin-left: 20px;
+    border-radius: 0px;
+}
+
+.menu li a:hover {
+    border-radius: 5px;
+    background-color: #251a0d;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+/* ===================== HAMBURGER MENU ===================== */
+
+.hamburger {
+  display: none;
+  font-size: 38px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #a67b5b;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid #553324;
+  text-align: center;
+}
+
+/* ===================== CAPA ===================== */
+.container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0 90px;
+}
+
+.imagemH img {
+  width: 90%;
+  max-height: 700px;
+  height: auto;
+  border: 8px solid #4a261f;
+  border-radius: 5px;
+}
+
+/* ===================== ORIGEM DO SERTANEJO ===================== */
+.fundo {
+  background-color: #f0e1c6;
+  padding: 40px 0;
+}
+
+#origem .titulo h1 {
+  font-size: 70px;
+  text-align: center;
+  color: #553324;
+}
+
+.conteudo-origem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* TEXTO À ESQUERDA */
+.texto {
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #5b3727;
+  order: 1; /* mantém o texto primeiro */
+}
+
+/* IMAGEM À DIREITA */
+.t_imagem {
+  flex: 1 1 45%;
+  max-width: 800px;
+  text-align: center;
+  order: 2; /* imagem vem depois do texto */
+}
+
+.t_imagem img {
+  width: 100%;
+  height: auto;
+  border: 10px solid #4a261f;
+  border-radius: 5px;
+  max-width: 700px;
+}
+
+
+/* ===================== SLIDER ARTISTAS ===================== */
+#artistas {
+  background-color: #fffbe7;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#artistas h1 {
+  font-size: 70px;
+  color: #503206;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+.slide-track {
+  display: flex;
+  width: max-content;
+  animation: scrollRight 18s linear infinite;
+}
+
+.artista {
+  flex: 0 0 auto;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.artista img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #4a261f;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.artista h3 {
+  font-size: 20px;
+  color: #503206;
+  margin-top: 10px;
+}
+
+.artista:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Pausa ao passar o mouse */
+.slider:hover .slide-track {
+    animation-play-state: paused;
+}
+
+/* ===================== BIOGRAFIAS ===================== */
+
+#biografia {
+  background-color: #fffbe7;
+  padding: 60px 20px;
+}
+
+#biografia .titulo2 pre {
+  text-align: center;
+  font-size: 72px;
+  color: #553324;
+}
+
+#biografia .centralizar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.centralizar :hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+#biografia .centralizar summary{
+  font-size: 35px;
+  width: 100%;
+}
+
+.centralizar p{
+  font-size: 18px;
+  line-height: 20px; /* Espaçamento entre linhas */
+  max-width: 600px;
+  
+}
+
+details {
+  border-radius: 10px;
+  padding: 30px;
+  width: 70%;
+  max-width: 600px;
+  margin-bottom: -5px;
+
+}
+
+summary {
+  cursor: pointer;
+  color: #4a261f;
+}
+
+
+details img {
+  height: auto;
+  max-width: 90%;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 3px solid #4a261f;
+}
+
+.centralizar details p {
+  text-align: justify;
+  font-size: 18px;
+  color: #5b3727;
+}
+
+/* ===================== PALAVRA SERTANEJO ===================== */
+
+.fundo {
+  background-color: #f0e1c6;
+  padding: 40px 0;
+}
+
+#palavra .titulo3 pre {
+  font-size: 70px;
+  text-align: center;
+  color: #553324;
+}
+
+.conteudo-palavra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* TEXTO À DIREITA */
+.texto2 {
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #5b3727;
+  order: 2; /* mantém o texto primeiro */
+}
+
+/* IMAGEM À ESQUERDA */
+.t_imagem2 {
+  flex: 1 1 45%;
+  max-width: 800px;
+  text-align: center;
+  order: 1; /* imagem vem depois do texto */
+}
+
+.t_imagem2 img {
+  width: 100%;
+  height: auto;
+  border: 10px solid #4a261f;
+  border-radius: 5px;
+  max-width: 700px;
+}
+
+
+/* ===================== RODAPÉ ===================== */
+
+footer {
+  width: 100%;
+  background-image: linear-gradient(to right, #553324, #a67b5b);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-section P {
+  color: white;
+}
+
+/* ===================== BOTÃO TOPO ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-topo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #553324;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.btn-topo:hover {
+  background-color: #a67b5b;
+  transform: scale(1.25);
+}
+
+
+
+/* ===================== RESPONSIVIDADE - TABLET ===================== */
+/* ===================== ORIGEM ===================== */
+@media (max-width: 1024px) {
+
+  .menu li a {
+    font-size: 15px;
+  }
+
+    #origem .titulo h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #553324;
+}
+  
+  /* IMAGEM À DIREITA */
+.t_imagem {
+  max-width: 100%;
+  text-align: center;
+  order: 1; /* imagem vem depois do texto */
+}
+
+  .texto {
+    width: 90%;
+    font-size: 25px;
+    order: 2;
+  }
+
+/* ===================== ARTISTAS ===================== */
+
+#artistas h1 {
+  font-size: 60px;
+  color: #503206;
+  margin-bottom: 20px;
+}
+
+  .artista img {
+    width:240px;
+    height: 240px;
+  }
+
+/* ===================== BIOGRAFIA ===================== */
+
+#biografia .titulo2 pre{
+  font-size:50px;
+}
+
+/* ===================== PALAVRA SERTANEJO ===================== */
+
+#palavra .titulo3 pre{
+  font-size: 50px;
+  text-align: center;
+  }
+
+}
+
+
+
+/* ===================== RESPONSIVIDADE - CELULAR ===================== */
+/* ===================== MENU ===================== */
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* ===================== ORIGEM ===================== */
+  
+  .imagemH img {
+    width: 95%;
+  }
+
+      #origem .titulo h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #553324;
+}
+  
+  /* IMAGEM À DIREITA */
+.t_imagem {
+  max-width: 100%;
+  text-align: center;
+  order: 1; /* imagem vem depois do texto */
+}
+
+  .texto {
+    width: 100%;
+    font-size: 25px;
+    order: 2;
+  }
+
+  /* ===================== ARTISTAS ===================== */
+
+#artistas h1 {
+  font-size: 45px;
+  color: #503206;
+  margin-bottom: 30px;
+}
+
+  .artista img {
+    width:240px;
+    height: 240px;
+  }
+}
+
+/* ===================== BIOGRAFIA ===================== */
+
+#biografia .titulo2 {
+  font-size: 50px;
+}
+
+#biografia summary{
+  font-size: 28px;
+  width: 100%;
+}
+
+.centralizar p{
+  line-height: 25px; /* Espaçamento entre linhas */
+  max-width: 900px;
+  
+}
+
+/* ===================== PALAVRA SERTANEJO ===================== */
+
+#palavra .titulo3 h1{
+  font-size: 45px;
+  text-align: center;
+}
+
+#palavra .texto2 {
+  width: 100%;
+}
