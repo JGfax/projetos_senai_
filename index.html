@@ -1,0 +1,304 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sertanejo</title>
+        <link rel="stylesheet" href="index.css">
+
+    <style>
+        @font-face {
+                font-family: minhafonte;
+                src: url(font/fontT.ttf);
+            }
+
+            pre{
+                font-family: "minhafonte";
+                color: #553324;
+            }
+
+            p{
+                color: #5b3727
+            }
+    </style>
+
+    </head>
+    <body>
+        <!-- ================== BOTÃO DE RETORNO ================== -->
+
+        <div id="topo"></div>
+
+        <!-- ================== NAVBAR ================== -->
+        <section id="menu">
+            <nav class="menu">
+                <div class="logo"> 
+                    <a href="index.html" target="_top">
+                        <img src="image/logo.webp" alt="logo" width="50px">
+                    </a>
+                </div>
+
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul>
+                    <li><a href="instrumentos.html" target="">Instrumentos</a></li>
+                    <li><a href="albuns.html">Álbuns e Músicas</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="marcos.html">Marcos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#">Saiba Mais</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Curiosidades</a>
+                <a href="#">Vídeo</a>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("mobileMenu");
+                    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+                }
+            </script>
+        </section>
+
+
+        <!-- ================== CAPA / IMAGEM PRINCIPAL ================== -->
+
+
+        <br> <br> <br>
+
+        <section id="inicio">
+            <div class="container">
+                <div class="imagemH">
+                    <picture>
+                        <source srcset="image/violaoV.webp" media="(max-width: 768px)">
+                        <img src="image/violaoH.webp" alt="violão sertanejo">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+    <!-- ================== ORIGEM DO SERTANEJO ================== -->
+    <section class="fundo">
+    <section id="origem">
+        <div class="titulo"> <br><br>
+            <pre><h1>ORIGEM DO SERTANEJO:</h1></pre><br>
+        </div>
+
+        <div class="conteudo-origem">
+            <div class="texto">
+                <p>
+                    A origem do sertanejo está nas modas de viola e nas canções que narravam a vida no campo, que começaram a ser produzidas na década de 1910 e ganharam expressão com Cornélio Pires em 1929, ao gravar o primeiro disco de música caipira.
+                    <br><br>
+                    O gênero, que inicialmente era conhecido como música caipira e se referia à vida rural, evoluiu para o "sertanejo universitário" e outras vertentes urbanas, incorporando o amor e a traição, misturando influências do pop, funk e forró, tornando-se um dos estilos mais populares do Brasil.
+                </p>
+            </div>
+
+            
+            <div class="t_imagem">
+                <img src="image/violaoH.webp" id="violao" height="480" width="850" alt="violão tocando sertanejo">
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- ================== PRINCIPAIS ARTISTAS ================== -->
+
+    <section id="artistas">
+    
+        <pre><h1>PRINCIPAIS ARTISTAS:</h1></pre><br>
+    </div>
+
+    <div class="slider">
+        <div class="slide-track">
+        <div class="artista"><img src="image/tonico.webp" alt=""><h3>Tonico & Tinoco</h3></div>
+        <div class="artista"><img src="image/ze neto.webp" alt=""><h3>Zé Neto & Cristiano</h3></div>
+        <div class="artista"><img src="image/marilia.webp" alt=""><h3>Marília Mendonça</h3></div>
+        <div class="artista"><img src="image/simone.webp" alt=""><h3>Simone Mendes</h3></div>
+        <div class="artista"><img src="image/xororo.webp" alt=""><h3>Chitãozinho & Xororó</h3></div>
+        <div class="artista"><img src="image/leonardo.webp" alt=""><h3>Leonardo</h3></div>
+        <div class="artista"><img src="image/gustavoL.webp" alt=""><h3>Gustavo Lima</h3></div>
+        <div class="artista"><img src="image/maiara.webp" alt=""><h3>Maiara & Maraisa</h3></div>
+        <div class="artista"><img src="image/henrique.webp" alt=""><h3>Henrique & Juliano</h3></div>
+
+        <!-- DUPLICAÇÃO -->
+        <div class="artista"><img src="image/tonico.webp" alt=""><h3>Tonico & Tinoco</h3></div>
+        <div class="artista"><img src="image/ze neto.webp" alt=""><h3>Zé Neto & Cristiano</h3></div>
+        <div class="artista"><img src="image/marilia.webp" alt=""><h3>Marília Mendonça</h3></div>
+        <div class="artista"><img src="image/simone.webp" alt=""><h3>Simone Mendes</h3></div>
+        <div class="artista"><img src="image/xororo.webp" alt=""><h3>Chitãozinho & Xororó</h3></div>
+        <div class="artista"><img src="image/leonardo.webp" alt=""><h3>Leonardo</h3></div>
+        <div class="artista"><img src="image/gustavoL.webp" alt=""><h3>Gustavo Lima</h3></div>
+        <div class="artista"><img src="image/maiara.webp" alt=""><h3>Maiara & Maraisa</h3></div>
+        <div class="artista"><img src="image/henrique.webp" alt=""><h3>Henrique & Juliano</h3></div>
+        
+        </div>
+    </div>
+
+    </section>
+
+        <!-- ================== BIOGRAFIAS ================== -->
+        <section id="biografia">
+            <h1 class="titulo2"><pre>BIOGRAFIA:</pre></h1>
+
+            <div class="centralizar">
+                <details>
+                    <summary>Jorge & Matheus</summary>
+                    <img src="image/jorge.webp" alt="Jorge e Mateus">
+                    <h1> Jorge & Matheus</h1>
+                    <p>
+                        Em 2005, os até então universitários, mas já cantores, Jorge e Mateus se conheceram por meio de um amigo em comum. Pouco depois desse primeiro contato, tiveram a oportunidade de cantar juntos em um churrasco, onde decidiram formar uma dupla. O primeiro show oficial foi ainda em 2005, na 
+                    mesma época, eles lançaram um CD independente.
+                    <br><br>
+                    Em 2007, lançaram o DVD Ao Vivo Em Goiânia. O álbum sacudiu o cenário da música sertaneja e fez da faixa Pode Chorar o primeiro sucesso de Jorge e Mateus, o projeto recebeu certificação de disco de platina da PMB, enquanto o single esteve entre as 100 músicas mais reproduzidas do ano. A partir daí, eles não pararam mais.
+                    <br><br>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Marília Mendonça</summary>
+                    <img src="image/mariliaA.webp" alt="Marília Mendonça">
+                    <h1>Marília Mendonça</h1>
+                    <p>
+                        Marília Dias Mendonça nasceu em 22 de julho de 1995, em Cristianópolis, Goiás. Começou a cantar ainda na infância, em igrejas evangélicas e no bar da família. Foi descoberta por uma produtora 
+                        e logo se tornou um dos maiores nomes do sertanejo, com hits como "Infiel" e "Como Faz Com Ela".
+                        <br><br>
+                        Marília foi uma das principais representantes do feminino no sertanejo, conquistando milhões de fãs. Em 5 de novembro de 2021, a música brasileira perdeu Marília tragicamente, quando ela faleceu aos 26 anos em um acidente aéreo, deixando um legado que jamais será esquecido. Sua carreira, embora curta, foi repleta de sucesso e reconhecimento.
+                        <br><br>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Chitãozinho & Chororó</summary>
+                    <img src="image/chitaozinho.webp" alt="chitaozinho">
+                    <h1>Chitãozinho & Chororó</h1>
+                    <p>
+                    Chitãozinho & Xororó, formada pelos irmãos José Lima Siqueira (Chitãozinho) e Durval de Lima (Xororó), nasceram no Paraná, e se tornaram uma das duplas mais importantes da música sertaneja. Na década de 1970, a dupla conquistou o Brasil com seu estilo único, misturando o sertanejo tradicional com influências da música pop.
+                    <br><br>
+                    A carreira dos irmãos ganhou destaque nos anos 1980, com o lançamento de sucessos como "Fio de Cabelo" e "Evidências", que se tornaram verdadeiros hinos da música brasileira. Ao longo das décadas, Chitãozinho & Xororó inovaram e se mantiveram relevantes, sempre se adaptando às novas gerações, mas sem perder a essência do sertanejo raiz.
+                    <br><br>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Henrique & Juliano</summary>
+                    <img src="image/henrique.webp" alt="Henrique e Juliano">
+                    <h1>Henrique & Juliano</h1>
+                    <p>
+                    Ricelly Henrique Tavares Reis, o Henrique (23 de maio de 1989) e Edson Alves dos Reis Júnior, o Juliano (27 de novembro de 1990), nasceram no interior do Tocantins.Desde muito novos, os dois mostravam afinidade com a música. Incentivados pelo pai, começaram a trilhar um caminho que os levaria ao estrelato.
+                    <br><br>
+                    Os irmãos começaram a se apresentar em rádios comunitárias e festivais escolares da região ainda na infância, mostrando desde cedo uma vontade inabalável de subir aos palcos e entreter o público.A virada na carreira veio em 2012, quando assinaram contrato com o selo Workshow, responsável por lançar grandes nomes do sertanejo.
+                    <br><br>
+                    </p>
+                </details>
+
+            </div>
+        </section>
+
+        <hr style="border: 1px solid #553324; width: 80%; margin: auto;">
+
+        <section id="biografia">
+            <div class="centralizar">
+                <details>
+                    <summary>Simone Mendes</summary>
+                     <img src="image/simoneM.webp" alt="simone">
+                    <h1> Simone Mendes </h1>
+                    <p>
+                    Em 2007, Simone Mendes iniciou sua trajetória ao lado da irmã Simaria, formando a dupla Simone & Simaria. As duas começaram cantando em bandas de forró e, pouco tempo depois, decidiram seguir carreira juntas no sertanejo. O primeiro grande destaque veio com o álbum As Coleguinhas – Vol. 1, que apresentou um estilo irreverente e conquistou o público em todo o Brasil, abrindo caminho para o sucesso nacional.
+                        <br><br>
+                    Em 2015, lançaram o DVD Bar das Coleguinhas, consolidando a dupla no sertanejo. Após a separação em 2022, Simone iniciou carreira solo e lançou o projeto Cintilante, com o hit Erro Gostoso, marcando uma nova fase de sucesso.
+                    <br><br>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Maiara & Maraísa</summary>
+                      <img src="image/maiaraM.webp" alt="maiara">
+                    <h1>Maiara & Maraísa</h1>
+                    <p>
+                        Em 2002, as irmãs Maiara e Maraisa começaram a cantar juntas em festas familiares na cidade de Tocantins, no Paraná. Pouco depois, decidiram formar a dupla Maiara & Maraisa e investir na carreira sertaneja, lançando seus primeiros trabalhos de forma independente. O talento das duas logo chamou atenção do público, e a dupla começou a se destacar com shows pelo Sul do Brasil.
+                        <br><br>
+                        Em 2015, lançaram o DVD Ao Vivo em Campo Grande, que consolidou a dupla entre os nomes de destaque do sertanejo feminino. Com hits como 10% e Medo Bobo, Maiara & Maraisa passaram a lotar shows e ganharam reconhecimento nacional. Desde então, continuam firmes na carreira, conquistando espaço e se mantendo como referência do feminejo.
+                        <br><br>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Gustavo Lima</summary>
+                     <img src="image/gustavoLI.webp" alt="gustavo">
+                    <h1>Gustavo Lima</h1>
+                    <p>
+                        Em 2009, Gustavo Lima começou sua carreira musical em Minas Gerais, cantando em bares e eventos locais. Pouco tempo depois, lançou seu primeiro álbum independente, chamado Gusttavo Lima e Você, que chamou atenção pelo estilo sertanejo romântico e pela voz marcante do cantor. Seus primeiros shows oficiais ajudaram a consolidar seu nome no cenário regional, abrindo caminho para o sucesso nacional.
+                        <br><br>
+                        Em 2011, lançou o DVD Inventor dos Amores, que trouxe hits como Balada e consolidou Gustavo Lima entre os principais nomes da música sertaneja. O projeto alcançou grande repercussão, garantindo shows lotados e prêmios importantes. Desde então, o cantor segue em carreira sólida, mantendo-se como um dos artistas mais populares do gênero.
+                        <br><br>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Zezé Di Camargo & Luciano</summary>
+                     <img src="image/zezE.webp" alt="zeze">
+                    <h1>Zezé Di Camargo & Luciano</h1>
+                    <p>
+                    Em 1991, os irmãos Zezé Di Camargo e Luciano Camargo, naturais de Pirenópolis, Goiás, formaram a dupla Zezé Di Camargo & Luciano. No mesmo ano, lançaram o single "É o Amor", que se tornou um grande sucesso nacional, catapultando-os para a fama e consolidando-os como uma das duplas sertanejas mais populares do Brasil. 
+                    <br><br>
+                    A dupla Zezé Di Camargo & Luciano lançou álbuns de grande sucesso, como "Zezé Di Camargo & Luciano" (1995) e "Dois Corações e Uma História" (2000), participou do projeto "Amigos" e se consolidou como uma das maiores referências do sertanejo brasileiro.
+                        <br><br>
+                    </p>
+                </details>
+            </div>
+        </section>
+        <br><br><br>
+
+<!-- ================== PALAVRA SERTANEJO ================== -->
+    <section class="fundo">
+    <section id="palavra">
+        <div class="titulo3"> <br><br>
+           <h1><pre>ORIGEM DA PALAVRA:</pre></h1><br>
+        </div>
+
+        <div class="conteudo-palavra">
+            <div class="texto2">
+                <p>
+                    A palavra “sertanejo” vem de “sertão”, usada pelos portugueses para nomear o interior do Brasil. Nessas regiões de vida simples e condições difíceis, o sertanejo tornou-se símbolo de resistência, coragem e ligação com a terra, representando um modo de vida baseado na força, fé e na relação com a natureza.
+                        <br><br>
+                    Com o tempo, “sertanejo” deixou de ser apenas um termo geográfico e passou a representar aspectos culturais, especialmente na música. Tornou-se símbolo do estilo de vida, dos costumes e da identidade brasileira, valorizado por retratar a vida, sentimentos e histórias do povo do sertão.
+                </p>
+            </div>
+
+            
+            <div class="t_imagem2">
+                <img src="image/violaoH.webp" id="violao" height="480" width="850" alt="violão tocando sertanejo">
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <br><br><br><br>
+
+        <!-- ================== RODAPÉ ================== -->
+        <section>
+            <footer>
+                <div class="footer-section">
+                    <h3>Desenvolvido por:</h3>
+                    <p>João Gustavo & Manuella Vitória</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Turma:</h3>
+                    <p>1-A-SESI-TI - Desenvolvimento de Sistemas</p>
+                </div>
+            </footer>
+        </section>
+
+        <!-- ============= BOTÃO DE RETORNO ===================-->
+
+        <!-- Âncora no topo -->
+    <a id="topo"></a>
+
+    <!-- Botão flutuante -->
+    <a href="#topo" class="btn-topo"> ⬆ </a>
+
+    </body>
+    </html>

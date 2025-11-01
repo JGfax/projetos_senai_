@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertanejo</title>
+    <link rel="stylesheet" href="albuns.css">
+
+<style>
+
+    @font-face {
+            font-family: minhafonte;
+            src: url(font/fontT.ttf);
+        }
+
+        pre{
+            font-family: "minhafonte";
+            color: #553324;
+        }
+
+        p{
+            color: #5b3727
+        }
+</style>
+
+</head>
+<body>
+
+    <!-- ================== BOTÃO DE RETORNO ================== -->
+      <div id="topo"></div>
+
+
+     
+    <!-- ================== NAVBAR ================== -->
+    <section id="menu">
+        <nav class="menu">
+            <div class="logo"> 
+                <a href="index.html" target="_top">
+                    <img src="image/logo.webp" alt="logo" width="50px">
+                </a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="instrumentos.html" target="">Instrumentos</a></li>
+                <li><a href="albuns.html">Álbuns e Músicas</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="marcos.html">Marcos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Saiba Mais</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Vídeo</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("mobileMenu");
+                menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+            }
+        </script>
+    </section>
+
+
+     <!-- ================== MÚSICAS ================== -->
+
+<br><br><br><br>
+
+<section id="marcos">
+ <div class="titulo">
+        <h1><pre>ALBÚNS:</pre></h1>
+    </div>
+
+<section class="playlists-container">
+
+  <div class="playlist-card">
+    <img src="image_albuns/zeneto.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Zé Neto & Cristiano</span>
+      <h3>Escolhas</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/album/0tBnLmuDb9EtemunXfCMeD?si=M-I1iTxQSwSio59OdCI5bw', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/gustavo.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Gustavo Lima</span>
+      <h3>Buteco</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/album/1AebCIKwFh7upRidnha8yo?si=eXQ5MCwrSPuX90vYnt0Juw', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+   <div class="playlist-card">
+    <img src="image_albuns/patroas.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Marillia Mendonça e Maiara & Maraisa</span>
+      <h3>Festas das Patroas</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/album/5S0cTPPACcLQxZPe2X88bQ?si=Mj_a286JTNmBmcky5t5p9g', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/marilia.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Marilia Mendonça</span>
+      <h3>Decretos Reais</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/6ncYffPA8uomCY8DJ0EXL9?si=Om4hGmO-RYCixa_DXdsdfg', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================== MÚSICAS-2 ================== -->
+
+<section class="playlists-container">
+
+  <div class="playlist-card">
+    <img src="image_albuns/jorge.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Jorge & Mateus</span>
+      <h3>Os Anjos Cantam</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/0spzPH10djjrUshMB2z9jt?si=w0kznERbS4OLbmWzHaTZhQ', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/maraisa.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Maiara & Maraisa</span>
+      <h3>Identidade</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/28lkxsDDOs1MlWhomdvLcF?si=2w2SdtyOTSm1jE4kZIbv5w', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/simone.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Simone Mendes</span>
+      <h3>Cantando Sua História</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/4mXp1YcjxA9i8PrIdpM8dH?si=1sqmylMGScSofhyXgt7vlA', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/mateus e kauan.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Matheus & Kauan</span>
+      <h3>Na Praia</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/2859TN8HzzAsM8qNgaw60e?si=yweyAhxKSKy8uJKOm4z53w', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================== MÚSICAS-3 ================== -->
+
+<section class="playlists-container">
+
+  <div class="playlist-card">
+    <img src="image_albuns/guilherme.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Guilherme & Benuto</span>
+      <h3>+Amor, +Música</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/6esq76PxWRNo6GxA35oal9?si=9Nx85zFoTLmHIk2uxUOY9Q', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/diego.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Diego & Vitor Hugo</span>
+      <h3>Uberlândia Vol. 02</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/2gbsDRJhXlBr23ab9O95c9?si=m2KjEqXiQbi6Oe34AHWzng', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/araujo.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Cristiano Araújo</span>
+      <h3>In the Cities</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/5nGde95l1DJcFZCB3NOduX?si=G-Vm_7fiT-WQHkE9LWFbFQ', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+
+  <div class="playlist-card">
+    <img src="image_albuns/marcos.webp" alt="Playlist Sertanejo">
+    <div class="playlist-info">
+      <span class="genre">Marcos & Belluti</span>
+      <h3>Energia</h3>
+           <button class="play-btn" onclick="window.open('https://open.spotify.com/intl-pt/album/65pIUbYEGuBftCFAI4MPnK?si=uoLFuyhVRbCuhN6LgBaaHw', '_blank')"> ▶ Abrir Spotify </button>
+    </div>
+  </div>
+
+</section>
+
+<hr> 
+    <!-- ================== MÚSICAS ================== -->
+
+
+<section id="musicas">
+ <div class="titulo">
+        <h1><pre>MÚSICAS:</pre></h1>
+    </div>
+
+     <div class="musicas">
+        <div class="container-musicas">
+           <video src="video/saidecasa.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/5ukX7atxjeI?si=P20S5cENP9nOGTuj', '_blank')"><b><u> No dia que eu sai de casa </u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/eoamor.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/LsWA1b_iCE4?si=zXb6Fu5vid9TQAZF', '_blank')"><b><u> É o amor </u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/boateazul.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/8HVLFySv1yQ?si=olZU3o-HQ0QwRvaf', '_blank')"><b><u> Boate Azul </u></b></h3>
+        </div>
+    </div>
+
+    </section>
+
+     <!-- ================== RODAPÉ ================== -->
+    <section>
+        <footer>
+            <div class="footer-section">
+                <h3>Desenvolvido por:</h3>
+                <p>João Gustavo & Manuella Vitória</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Turma:</h3>
+                <p>1-A-SESI-TI - Desenvolvimento de Sistemas</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- ============= BOTÃO DE RETORNO ===================-->
+
+    <!-- Âncora no topo -->
+<a id="topo"></a>
+
+<!-- Botão flutuante -->
+<a href="#topo" class="btn-topo"> ⬆ </a>
+
+
+    

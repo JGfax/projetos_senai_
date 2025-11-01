@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertanejo</title>
+    <link rel="stylesheet" href="marcos.css">
+</head>
+
+<style>
+
+    @font-face {
+            font-family: minhafonte;
+            src: url(font/fontT.ttf);
+        }
+
+        pre{
+            font-family: "minhafonte";
+            color: #553324;
+        }
+
+        p{
+            color: #5b3727
+        }
+</style>
+
+
+<body>
+    <!-- ================== BOTÃO DE RETORNO ================== -->
+    <div id="topo"></div>
+    
+    <!-- ================== NAVBAR ================== -->
+    <section id="menu">
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html" target="_top">
+                    <img src="image/logo.webp" alt="logo" width="50px">
+                </a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="instrumentos.html" target="_top">Instrumentos</a></li>
+                <li><a href="albuns.html">Álbuns e Músicas</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="marcos.html">Marcos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Saiba Mais</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Vídeo</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("mobileMenu");
+                menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+            }
+        </script>
+    </section>
+
+
+      <!-- ================== VÍDEOS ================== -->
+<br><br><br><br><br><br>
+
+    <section id="marcos">
+
+    <div class="titulo">
+        <h1><pre> MÚSICAS: </pre></h1>
+    </div>
+
+    <div class="musicas">
+        <div class="container-musicas">
+           <video src="video/saidecasa.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/5ukX7atxjeI?si=P20S5cENP9nOGTuj', '_blank')"><b><u> No dia que eu sai de casa </u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/eoamor.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/LsWA1b_iCE4?si=zXb6Fu5vid9TQAZF', '_blank')"><b><u> É o amor </u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/boateazul.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/8HVLFySv1yQ?si=olZU3o-HQ0QwRvaf', '_blank')"><b><u> Boate Azul </u></b></h3>
+        </div>
+    </div>
+
+    </section>
+
+    <br><br><br><br>
+
+
+    <section>
+        <div class="musicas">
+        <div class="container-musicas">
+           <video src="video/fiodecabelo.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/48kf5eG5yeY?si=bj0nFZzgQvOW5ILV', '_blank')"><b><u>Fio de Cabelo</u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/penseemmim.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/QvLYeQzoFN0?si=ky74ATpsp7ZxgHVe', '_blank')"><b><u>Pense em Mim</u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/propaganda.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/mQr7XemLs8s?si=NfdLKufBXbNqJcp_', '_blank')"><b><u>Propaganda</u></b></h3>
+        </div>
+    </div>
+
+    </section>
+
+    <br><br><br><br>
+
+    <section>
+        <div class="musicas">
+        <div class="container-musicas">
+           <video src="video/teesperando.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/Z5pWz_OR5Sg?si=d5efKCOL_q-ZWWMY', '_blank')"><b><u>Te Esperando</u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/trocadecalcada.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/WkYqQctOi9g?si=jVD5QnruTP7S2-5s', '_blank')"><b><u>Troca de Calçada</u></b></h3>
+        </div>
+
+
+         <div class="container-musicas">
+           <video src="video/tubaroes.mp4" height="300px" width="500px" controls></video>
+           <h3 style="color: #5b3727" onclick="window.open('https://youtu.be/10XarNSkw0s?si=xWk8Awgef3e9vOE4', '_blank')"><b><u>Tubarões</u></b></h3>
+        </div>
+    </div>
+
+    </section>
+    
+
+    <br><br><br><br>
+        <!-- ================== RODAPÉ ================== -->
+
+    <section>
+        <footer>
+            <div class="footer-section">
+                <h3>Desenvolvido por:</h3>
+                <p style="color: white;">João Gustavo & Manuella Vitória</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Turma:</h3>
+                <p style="color: white;">1-A-SESI-TI - Desenvolvimento de Sistemas</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ============= BOTÃO DE RETORNO ===================-->
+
+    <!-- Âncora no topo -->
+<a id="topo"></a>
+
+<!-- Botão flutuante -->
+<a href="#topo" class="btn-topo"> ⬆ </a>
+
+
+</body>
+</html>
